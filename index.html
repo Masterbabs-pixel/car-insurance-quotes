@@ -1,1 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Your Free Car Insurance Quote Today</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">InsureQuick</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#quote">Get Quote</a></li>
+                <li><a href="#features">Why Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
 
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Get Your Free Car Insurance Quote in 2 Minutes</h1>
+            <p>Compare quotes from top insurance companies and save up to 40% on your car insurance</p>
+            <button class="cta-button" onclick="scrollToQuote()">Get Your Free Quote Now</button>
+        </div>
+        <div class="hero-image">
+            <div class="car-icon">🚗</div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="container">
+            <h2>Why Choose Us?</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">⚡</div>
+                    <h3>Super Fast</h3>
+                    <p>Get quotes in just 2 minutes. No long forms or waiting.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🛡️</div>
+                    <h3>100% Free</h3>
+                    <p>Compare quotes from multiple insurers completely free.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">💰</div>
+                    <h3>Save Money</h3>
+                    <p>Find the best rates and save up to 40% on premiums.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🔒</div>
+                    <h3>Secure & Safe</h3>
+                    <p>Your data is protected with industry-leading security.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quote Form Section -->
+    <section id="quote" class="quote-section">
+        <div class="container">
+            <h2>Get Your Free Quote</h2>
+            <form id="quoteForm" class="quote-form">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="firstName">First Name *</label>
+                        <input type="text" id="firstName" name="firstName" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="lastName">Last Name *</label>
+                        <input type="text" id="lastName" name="lastName" required>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="email">Email Address *</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number *</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="age">Age *</label>
+                        <select id="age" name="age" required>
+                            <option value="">Select Age</option>
+                            <option value="18-25">18-25</option>
+                            <option value="26-35">26-35</option>
+                            <option value="36-45">36-45</option>
+                            <option value="46-55">46-55</option>
+                            <option value="56+">56+</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="zipCode">Zip Code *</label>
+                        <input type="text" id="zipCode" name="zipCode" required>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="carYear">Car Year *</label>
+                        <input type="number" id="carYear" name="carYear" min="1990" max="2026" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="carMake">Car Make *</label>
+                        <input type="text" id="carMake" name="carMake" placeholder="e.g., Toyota" required>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="carModel">Car Model *</label>
+                        <input type="text" id="carModel" name="carModel" placeholder="e.g., Camry" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="drivingRecord">Driving Record *</label>
+                        <select id="drivingRecord" name="drivingRecord" required>
+                            <option value="">Select Option</option>
+                            <option value="Clean">Clean</option>
+                            <option value="Minor Violations">Minor Violations</option>
+                            <option value="Accidents">Accidents</option>
+                        </select>
+                    </div>
+                </div>
+
+                <button type="submit" class="submit-button">Get My Free Quote</button>
+                <p class="form-disclaimer">We respect your privacy. Your information is secure and will never be shared.</p>
+            </form>
+
+            <div id="successMessage" class="success-message" style="display: none;">
+                <h3>✓ Quote Request Submitted!</h3>
+                <p>Thank you! Insurance companies will contact you shortly with personalized quotes.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Proof Section -->
+    <section class="social-proof">
+        <div class="container">
+            <h2>Trusted by Thousands</h2>
+            <div class="stats">
+                <div class="stat">
+                    <h3>50,000+</h3>
+                    <p>Happy Customers</p>
+                </div>
+                <div class="stat">
+                    <h3>$2M+</h3>
+                    <p>Saved in Premiums</p>
+                </div>
+                <div class="stat">
+                    <h3>4.8★</h3>
+                    <p>Customer Rating</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact" class="footer">
+        <div class="container">
+            <p>&copy; 2026 InsureQuick. All rights reserved.</p>
+            <p>Questions? Email us at: <strong>support@insurequick.com</strong></p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
